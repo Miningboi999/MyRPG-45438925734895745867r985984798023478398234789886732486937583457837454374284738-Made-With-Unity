@@ -16,6 +16,7 @@ public int damageModifier;
     {
         base.Use();
         EquipmentManager.instance.Equip(this);
+        removeFromInventory();
     }
 
 }
