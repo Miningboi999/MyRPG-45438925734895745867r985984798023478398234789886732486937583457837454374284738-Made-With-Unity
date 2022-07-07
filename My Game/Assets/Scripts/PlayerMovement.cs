@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         transform.Translate(Vector3.right * verticInput * 10f * Time.deltaTime);
-        transform.Rotate(new Vector3(0, horizInput, 0));
+        transform.Rotate(new Vector3(0, horizInput * 50f * Time.deltaTime, 0));
 
         if (Input.GetButtonDown("Jump"))
         {
