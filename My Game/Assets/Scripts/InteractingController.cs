@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class InteractingController : MonoBehaviour
@@ -30,7 +31,7 @@ public class InteractingController : MonoBehaviour
                 if (interactable != null)
                 {
                     distanceWithRadius = Vector3.Distance(interactable.transform.position, transform.position);
-                    if (distanceWithRadius <= 10)
+                    if (distanceWithRadius <= 10 && !EventSystem.current.IsPointerOverGameObject())
                     {
                         SetFocus(interactable);
                     }
