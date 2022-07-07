@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu()]
-public class NewBehaviourScript : Item
+[CreateAssetMenu(fileName = "New Equipment", menuName = "Inventory/Equipment")]
+public class Equipment : Item
 {
-    // Start is called before the first frame update
-    void Start()
-    {
 
+public EquipmentSlot equipSlot;
+
+public int armorModifier;
+public int damageModifier;
+
+
+    public override void Use()
+    {
+        base.Use();
+        EquipmentManager.instance.Equip(this);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
+
+public enum EquipmentSlot { Head, Chest, Legs, Weapon, Shield, Feet }
