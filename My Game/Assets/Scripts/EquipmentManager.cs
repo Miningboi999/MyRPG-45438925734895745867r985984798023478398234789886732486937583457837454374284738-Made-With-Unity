@@ -75,6 +75,7 @@ public class EquipmentManager : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(currentEquipment[3]);
         if (Input.GetKeyDown(KeyCode.U))
         {
             UnequipAll();
