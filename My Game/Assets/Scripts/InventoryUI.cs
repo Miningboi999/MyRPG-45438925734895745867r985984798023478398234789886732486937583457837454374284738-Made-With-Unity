@@ -7,6 +7,8 @@ public class InventoryUI : MonoBehaviour
     public GameObject inventoryUI;
     Inventory inventory;
     InventorySlot[] slots;
+    Equipment[] currentEquipment;
+
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +17,11 @@ public class InventoryUI : MonoBehaviour
         inventory.onItemChangedCallBack += UpdateUI;
 
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
+
+
+        int numSlots = System.Enum.GetNames(typeof(EquipmentSlot)).Length;
+        currentEquipment = new Equipment[numSlots];
+
     }
 
     // Update is called once per frame
@@ -45,6 +52,8 @@ public class InventoryUI : MonoBehaviour
                 slots[i].ClearSlot();
             }
         }
+
+
     }
 
 }

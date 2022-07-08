@@ -7,6 +7,13 @@ public class EquipmentManager : MonoBehaviour
     #region  Singleton
     public static EquipmentManager instance;
 
+
+    [SerializeField] GameObject helm;
+    [SerializeField] GameObject pant;
+    [SerializeField] GameObject shirt;
+
+
+
     void Awake()
     {
         instance = this;
@@ -75,7 +82,6 @@ public class EquipmentManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(currentEquipment[3]);
         if (Input.GetKeyDown(KeyCode.U))
         {
             UnequipAll();
@@ -85,5 +91,27 @@ public class EquipmentManager : MonoBehaviour
         {
             Unequip(3);
         }
+
+                if (currentEquipment[0] != null)
+        {
+            helm.SetActive(true);
+        }
+        if (currentEquipment[0] == null)
+            helm.SetActive(false);
+
+        if (currentEquipment[2] != null)
+        {
+            pant.SetActive(true);
+        }
+        if (currentEquipment[2] == null)
+            pant.SetActive(false);
+
+        if (currentEquipment[1] != null)
+        {
+            shirt.SetActive(true);
+        }
+        if (currentEquipment[1] == null)
+            shirt.SetActive(false);
+
     }
 }
