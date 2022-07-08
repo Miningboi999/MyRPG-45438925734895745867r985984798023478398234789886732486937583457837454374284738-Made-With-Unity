@@ -24,6 +24,12 @@ public class InventoryUI : MonoBehaviour
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
         }
+
+        if (Input.GetKeyDown("u") || Input.GetKeyDown("q"))
+        {
+            inventoryUI.SetActive(true);
+        }
+
     }
 
     void UpdateUI()
