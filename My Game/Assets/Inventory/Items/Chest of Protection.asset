@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b20383334e98e543b220649a685d44e, type: 3}
-  m_Name: Helmet of Fire
+  m_Name: Chest of Protection
   m_EditorClassIdentifier: 
-  name: Helmet of Fire
-  icon: {fileID: 21300000, guid: 50448e9603e5bdc4ba67eaa7eb8eb232, type: 3}
+  name: Chest of Protection
+  icon: {fileID: 21300000, guid: 57715df191de47745a4a3e9371ff2e48, type: 3}
   isDefaultItem: 0
-  equipSlot: 0
-  armorModifier: 2
-  damageModifier: 1
+  equipSlot: 1
+  armorModifier: 5
+  damageModifier: 0

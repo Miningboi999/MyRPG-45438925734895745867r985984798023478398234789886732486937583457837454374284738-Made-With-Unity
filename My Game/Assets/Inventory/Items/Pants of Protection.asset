@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b20383334e98e543b220649a685d44e, type: 3}
-  m_Name: Helmet of Protection
+  m_Name: Pants of Protection
   m_EditorClassIdentifier: 
-  name: Helmet of Protection
-  icon: {fileID: 21300000, guid: 36e1159b152e70a42a74d45bf44d8560, type: 3}
+  name: Pants of Protection
+  icon: {fileID: 21300000, guid: 2a09b9820358afd4994609eb988118aa, type: 3}
   isDefaultItem: 0
-  equipSlot: 0
-  armorModifier: 3
+  equipSlot: 2
+  armorModifier: 2
   damageModifier: 0
