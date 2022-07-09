@@ -10,8 +10,10 @@ public class PlayerStats : CharStats
         EquipmentManager.instance.onEquipmentChanged += OnEquipmentChanged;
     }
 
+
+
     void OnEquipmentChanged(Equipment newItem, Equipment oldItem)
     {
-        
+
     }
 }
