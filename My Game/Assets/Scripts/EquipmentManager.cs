@@ -19,6 +19,7 @@ public class EquipmentManager : MonoBehaviour
     [SerializeField] GameObject shirtR;
     [SerializeField] GameObject shirtC;
     [SerializeField] GameObject sword;
+    [SerializeField] GameObject animator;
 
     public bool holdsword = false;
 
@@ -143,13 +144,15 @@ public class EquipmentManager : MonoBehaviour
         if (currentEquipment[3] != null)
         {
             sword.SetActive(true);
-            holdsword = true;
+            animator.SetActive(true);
         }
         if (currentEquipment[3] == null)
         {
             sword.SetActive(false);
-            holdsword = false;
+            animator.SetActive(false);
         }
+
+
 
     }
 }

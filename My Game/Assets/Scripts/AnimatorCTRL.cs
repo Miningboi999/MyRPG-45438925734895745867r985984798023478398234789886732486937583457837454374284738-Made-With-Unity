@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimatorCTRL : MonoBehaviour
 {
     [SerializeField] float walk;
+    [SerializeField] GameObject animateObj;
     Animator animator;
     bool fWalk;
     bool bWalk;
@@ -59,6 +60,12 @@ public class AnimatorCTRL : MonoBehaviour
             animator.SetBool("isJumping", false);
             jump = false;
         }
+
+        if (animateObj.activeSelf == true)
+            animator.SetBool("isSword", true);
+
+        if (animateObj.activeSelf == false)
+            animator.SetBool("isSword", false);
 
     }
 }

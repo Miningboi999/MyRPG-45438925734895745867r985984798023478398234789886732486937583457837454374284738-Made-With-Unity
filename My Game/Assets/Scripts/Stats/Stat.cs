@@ -16,7 +16,10 @@ public int GetValue ()
     return baseValue;
 }
 
-
+public void AddModifier (int modifier)
+{
+    
+}
 
 
 
