@@ -9,13 +9,18 @@ public class EquipmentManager : MonoBehaviour
 
 
     [SerializeField] GameObject helm;
-    [SerializeField] GameObject pant;
+    [SerializeField] GameObject pantLT;
+    [SerializeField] GameObject pantRT;
+    [SerializeField] GameObject pantL;
+    [SerializeField] GameObject pantR;
     [SerializeField] GameObject shirtLT;
     [SerializeField] GameObject shirtRT;
     [SerializeField] GameObject shirtL;
     [SerializeField] GameObject shirtR;
     [SerializeField] GameObject shirtC;
     [SerializeField] GameObject sword;
+
+    public bool holdsword = false;
 
 
 
@@ -106,11 +111,18 @@ public class EquipmentManager : MonoBehaviour
 
         if (currentEquipment[2] != null)
         {
-            pant.SetActive(true);
+            pantLT.SetActive(true);
+            pantRT.SetActive(true);
+            pantL.SetActive(true);
+            pantR.SetActive(true);
         }
         if (currentEquipment[2] == null)
-            pant.SetActive(false);
-
+        {
+            pantLT.SetActive(false);
+            pantRT.SetActive(false);
+            pantL.SetActive(false);
+            pantR.SetActive(false);
+        }
         if (currentEquipment[1] != null)
         {
             shirtLT.SetActive(true);
@@ -131,9 +143,13 @@ public class EquipmentManager : MonoBehaviour
         if (currentEquipment[3] != null)
         {
             sword.SetActive(true);
+            holdsword = true;
         }
         if (currentEquipment[3] == null)
+        {
             sword.SetActive(false);
+            holdsword = false;
+        }
 
     }
 }
