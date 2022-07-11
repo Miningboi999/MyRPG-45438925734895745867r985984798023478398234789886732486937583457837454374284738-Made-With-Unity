@@ -4902,6 +4902,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2034511654}
     m_Modifications:
+    - target: {fileID: -6946519245310723804, guid: 28230f045fe8b9f4b94f9cb930260d05, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 605266016310426389, guid: 28230f045fe8b9f4b94f9cb930260d05, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4961,6 +4965,10 @@ PrefabInstance:
     - target: {fileID: 2961224336562616152, guid: 28230f045fe8b9f4b94f9cb930260d05, type: 3}
       propertyPath: m_Name
       value: Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765219714814312129, guid: 28230f045fe8b9f4b94f9cb930260d05, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28230f045fe8b9f4b94f9cb930260d05, type: 3}
@@ -5348,6 +5356,7 @@ GameObject:
   - component: {fileID: 1792432161}
   - component: {fileID: 1792432162}
   - component: {fileID: 1792432163}
+  - component: {fileID: 1792432164}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -5409,6 +5418,18 @@ MonoBehaviour:
   sword: {fileID: 2684510067487262822}
   animator: {fileID: 393385510}
   holdsword: 0
+--- !u!114 &1792432164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792432160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39c229305fd43342ab20691e871da15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1836690568
 PrefabInstance:
   m_ObjectHideFlags: 0
