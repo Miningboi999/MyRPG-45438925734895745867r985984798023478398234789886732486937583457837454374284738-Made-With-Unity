@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 31f34a2c40aad44429b8c816418a9820, type: 2}
 --- !u!1 &26648566
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,6 +281,37 @@ MonoBehaviour:
     baseValue: 0
   armor:
     baseValue: 0
+--- !u!1 &71630685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71630686}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71630686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71630685}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.304273, y: 138.95908, z: -0.7364696}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &93522257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1413,37 +1444,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387158921}
   m_Mesh: {fileID: -3779719019184939803, guid: c0b9de4b845af4b4e81d48664c91cdb1, type: 3}
---- !u!1 &393385510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 393385511}
-  m_Layer: 0
-  m_Name: IsHoldingSword
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &393385511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393385510}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0857077, y: 137.71724, z: -0.38283584}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &406819270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3775,7 +3775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1615898822d0154468bce245d3e83e56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 10
+  lookRadius: 40
 --- !u!54 &1086446059
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3816,8 +3816,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 2
-  m_Acceleration: 20
+  m_Speed: 10.5
+  m_Acceleration: 1
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 2
@@ -3836,7 +3836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086446057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.15, y: 138.01, z: -0.04050452}
+  m_LocalPosition: {x: 48.5, y: 138.01, z: -0.04050452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4058,6 +4058,7 @@ GameObject:
   - component: {fileID: 1174218679}
   - component: {fileID: 1174218678}
   - component: {fileID: 1174218683}
+  - component: {fileID: 1174218684}
   m_Layer: 0
   m_Name: Chest of Protection
   m_TagString: Untagged
@@ -4175,6 +4176,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &1174218684
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174218677}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!224 &1204194593 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3315930097145429663, guid: 97b885aab0e85c24ab901ec026b917bb, type: 3}
@@ -5135,6 +5152,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b343cf591ca6f5a4589fe7630523ac5e, type: 3}
   m_PrefabInstance: {fileID: 503517443}
   m_PrefabAsset: {fileID: 0}
+--- !u!208 &1631146699
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631146695}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.22900002, y: 0.14600001, z: 0.28500003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.001, z: 0.010000001}
+  m_TimeToStationary: 0.5
 --- !u!224 &1674395985 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3315930097145429663, guid: 97b885aab0e85c24ab901ec026b917bb, type: 3}
@@ -5416,7 +5449,7 @@ MonoBehaviour:
   shirtR: {fileID: 1072178745}
   shirtC: {fileID: 1631146695}
   sword: {fileID: 2684510067487262822}
-  animator: {fileID: 393385510}
+  animator: {fileID: 0}
   holdsword: 0
 --- !u!114 &1792432164
 MonoBehaviour:
@@ -5430,6 +5463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39c229305fd43342ab20691e871da15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 421525480}
 --- !u!1001 &1836690568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5591,7 +5625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walk: 0
-  animateObj: {fileID: 393385510}
+  animateObj: {fileID: 0}
 --- !u!1 &1872856297
 GameObject:
   m_ObjectHideFlags: 0
