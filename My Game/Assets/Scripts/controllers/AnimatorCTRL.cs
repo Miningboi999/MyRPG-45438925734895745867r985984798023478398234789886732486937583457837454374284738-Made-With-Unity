@@ -61,11 +61,12 @@ public class AnimatorCTRL : MonoBehaviour
             jump = false;
         }
 
-        if (animateObj.activeSelf == true)
-            animator.SetBool("isSword", true);
+        /*         if (animateObj.activeSelf == true)
+                    animator.SetBool("isSword", true);
 
-        if (animateObj.activeSelf == false)
-            animator.SetBool("isSword", false);
+                if (animateObj.activeSelf == false)
+                    animator.SetBool("isSword", false);
 
+         */
     }
 }

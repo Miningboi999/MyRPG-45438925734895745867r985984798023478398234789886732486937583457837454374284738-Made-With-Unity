@@ -18,9 +18,12 @@ public class Interactable : MonoBehaviour
 
     public void OnFocused(Transform playerTransform)
     {
-        isFocus = true;
-        player = playerTransform;
-        hasInteracted = false;
+        if (Vector3.Distance(transform.position, playerTransform.position) <= radius)
+        {
+            isFocus = true;
+            player = playerTransform;
+            hasInteracted = false;
+        } else OnDefocused ();
     }
 
     public void OnDefocused()

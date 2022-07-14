@@ -144,12 +144,12 @@ public class EquipmentManager : MonoBehaviour
         if (currentEquipment[3] != null)
         {
             sword.SetActive(true);
-            animator.SetActive(true);
+//            animator.SetActive(true);
         }
         if (currentEquipment[3] == null)
         {
             sword.SetActive(false);
-            animator.SetActive(false);
+//            animator.SetActive(false);
         }
 
 

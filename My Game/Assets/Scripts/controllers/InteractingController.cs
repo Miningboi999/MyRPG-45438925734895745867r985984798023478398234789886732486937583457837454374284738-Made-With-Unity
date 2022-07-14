@@ -6,7 +6,6 @@ using UnityEngine;
 public class InteractingController : MonoBehaviour
 {
     [SerializeField] float distanceWithRadius;
-
     public Interactable focus;
 
     // Start is called before the first frame update
@@ -30,8 +29,8 @@ public class InteractingController : MonoBehaviour
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
                 if (interactable != null)
                 {
-                    distanceWithRadius = Vector3.Distance(interactable.transform.position, transform.position);
-                    if (distanceWithRadius <= 10 && !EventSystem.current.IsPointerOverGameObject())
+//                    distanceWithRadius = Vector3.Distance(interactable.transform.position, transform.position);
+                    if (!EventSystem.current.IsPointerOverGameObject())
                     {
                         SetFocus(interactable);
                     }
